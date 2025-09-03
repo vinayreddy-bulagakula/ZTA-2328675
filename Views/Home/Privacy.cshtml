@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Privacy Policy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Privacy Policy</h2>
+    <p>Our Zero Trust Architecture (ZTA) emphasizes privacy by design. Here’s what we do to protect your data:</p>
+
+    <ul class="list-group mb-3">
+        <li class="list-group-item"><strong>User Identity & Access Transparency:</strong> Only authenticated, authorized users access the system via MFA and roles.</li>
+        <li class="list-group-item"><strong>Minimal Data Exposure:</strong> Access is granted per request with least privilege; logs are retained solely for security purposes.</li>
+        <li class="list-group-item"><strong>Anonymous Usage Data:</strong> SIEM dashboards display aggregated, anonymized event data.</li>
+        <li class="list-group-item"><strong>Secure Communication:</strong> All communications are secured via TLS; MFA secrets are handled safely.</li>
+        <li class="list-group-item"><strong>User-Centric Control:</strong> Users can change passwords and logout securely at any time.</li>
+        <li class="list-group-item"><strong>Privacy Embedded in Design:</strong> The system is architected with privacy as the default setting.</li>
+        <li class="list-group-item"><strong>Accountability:</strong> Security events are logged and transparent, ensuring auditing capability.</li>
+    </ul>
+
+    <a class="btn btn-secondary" href="@Url.Action("Index", "Home")">Back to Home</a>
+</div>
